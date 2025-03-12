@@ -99,8 +99,8 @@ export default function SchoolOfScienceAndComputing() {
                   <p>
                     To achieve this goal, the school continues to offer, review and develop relevant academic 
                     programs in order to meet her teaching and training requirements in diverse fields of the 
-                    school's training areas. To run her activities are qualified members of staff who offer 
-                    intensive student training and scientific exposure to contribute to achieving Kenya's Vision 2030.
+                    school&apos;s training areas. To run her activities are qualified members of staff who offer 
+                    intensive student training and scientific exposure to contribute to achieving Kenya&apos;s Vision 2030.
                   </p>
                   <p>
                     Key physical facilities within the school include four well-equipped ultra-modern laboratories 

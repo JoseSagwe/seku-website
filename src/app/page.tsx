@@ -1,5 +1,4 @@
 // app/page.tsx
-import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Schools from "@/components/Schools";

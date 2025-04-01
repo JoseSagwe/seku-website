@@ -1,4 +1,3 @@
-// components/DepartmentChair.tsx
 "use client";
 import Image from "next/image";
 const DepartmentChair = () => {
@@ -34,15 +33,14 @@ const DepartmentChair = () => {
               
               <div className="prose prose-lg text-gray-600">
                 <p>
-                  The department of Computer Science and Software Engineering is a leading centre of excellence in 
-                  research and development. The department has launched a Bachelor of Science in Computer 
-                  Science programme which aims at providing students with a solid understanding of the underlying 
-                  technologies upon which software solutions are built.
+                Welcome to the Department of Computer Science and Technology. Our department is dedicated to academic excellence, cutting-edge research, and innovative technological advancements that shape the future.
+                In a rapidly evolving digital world, Computer Science and Technology play a critical role in driving innovation across diverse sectors of our economy. Our dynamic curriculum is designed to equip a learner with skills and dispositions in computing, programming, artificial intelligence, cybersecurity, and other emerging technologies.
+                Our faculty comprises highly skilled and committed personnel with vast experience in both research and industry. 
                 </p>
                 <p>
-                  The programme ensures graduates have the knowledge needed to continually grow as technology 
-                  evolves and provide a basis for success in any computer Science career the student chooses to pursue. 
-                  The department has skilled staff and boasts of a state of the art computer laboratory.
+                Additionally, our learning environment is supported with access to state-of-the-art laboratories, research centres, and industry partnerships that enhance practical learning and career opportunities.
+                Whether you aspire to be a Data Scientist, AI expert, Software Developer and or cybersecurity expert, our department provides the required competencies to help you achieve your goals.
+                We invite you to explore our programs and be part of an exciting journey in tech world.
                 </p>
               </div>
               

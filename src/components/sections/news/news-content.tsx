@@ -40,7 +40,7 @@ const NewsContent = () => {
     return (
         <div className="container mx-auto p-6">
             <h1 className="text-4xl font-bold mb-12 text-gray-800">Latest News</h1>
-            <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex flex-col-reverse md:flex-row gap-8">
                 {/* Main content area */}
                 <div className="flex-grow order-2 md:order-1">
                     {newsContent[selectedNewsIndex] && (

@@ -1,5 +1,5 @@
+// components/sections/news/news-content.tsx
 'use client'
-
 import { useState, useEffect } from "react";
 import { newsContent } from "../../../../constants/news";
 import Image from "next/image";
@@ -21,7 +21,8 @@ const NewsContent = () => {
                     try {
                         const response = await fetch(img, { method: 'HEAD' });
                         imageStatus[newsIndex][imgIndex] = response.ok;
-                    } catch (error) {
+                    } catch (_error) {
+                        // Using underscore prefix to indicate we're ignoring this variable
                         imageStatus[newsIndex][imgIndex] = false;
                     }
                 }

@@ -92,7 +92,7 @@ const DirectoratesSection = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Directorates</h2>
           <div className="w-20 h-1 bg-green-700 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            South Eastern Kenya University has the following directorates that support the university's operations and academic excellence.
+            South Eastern Kenya University has the following directorates that support the university&apos;s operations and academic excellence.
           </p>
         </div>
         

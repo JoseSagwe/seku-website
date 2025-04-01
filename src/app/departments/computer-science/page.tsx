@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import DepartmentChair from "@/components/DepartmentChair";
 import StaffPortfolio from "@/components/StaffPortfolio";
-import AcademicProgramsList from "@/components/AcademicProgramsList";
+import AcademicProgramsList from "@/components/sections/home/AcademicProgramsList";
 
 export default function ComputerScienceDepartment() {
   return (

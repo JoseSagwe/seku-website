@@ -1,10 +1,11 @@
 // app/page.tsx
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Schools from "@/components/Schools";
-import AcademicPrograms from "@/components/AcademicPrograms";
-import LatestNews from "@/components/LatestNews";
+
 import Footer from "@/components/Footer";
+import Hero from "@/components/sections/home/Hero";
+import AcademicPrograms from "@/components/AcademicPrograms";
+import Schools from "@/components/sections/home/Schools";
+import LatestNews from "@/components/sections/home/LatestNews";
 
 export default function Home() {
   return (

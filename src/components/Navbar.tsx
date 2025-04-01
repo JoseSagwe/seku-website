@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+import { headerLinks } from "../../constants/nav-routes";
+
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -52,12 +55,12 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <div className="relative h-14 w-52">
-                <Image 
-                  src="/seku-logo.png" 
+                <Image
+                  src="/seku-logo.png"
                   alt="SEKU Logo"
                   fill
                   style={{ objectFit: "contain" }}
-                  priority 
+                  priority
                 />
               </div>
               <div className="ml-2 hidden md:block">
@@ -69,26 +72,11 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="font-medium text-gray-700 hover:text-green-700">HOME</Link>
-            <Link href="/about" className="font-medium text-gray-700 hover:text-green-700">ABOUT US</Link>
-            <div className="relative group">
-              <button className="font-medium text-gray-700 hover:text-green-700 group flex items-center">
-                DEPARTMENTS
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </button>
-              <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <Link href="/departments/computer-science" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700">Computer Science & Technology</Link>
-                <Link href="/departments/life-sciences" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700">Life Sciences</Link>
-                <Link href="/departments/mathematics" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700">Mathematics & Actuarial Science</Link>
-                <Link href="/departments/physical-sciences" className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700">Physical Sciences</Link>
-              </div>
-            </div>
-            <Link href="/programmes" className="font-medium text-gray-700 hover:text-green-700">PROGRAMMES</Link>
-            <Link href="/research" className="font-medium text-gray-700 hover:text-green-700">RESEARCHES</Link>
-            <Link href="/news" className="font-medium text-gray-700 hover:text-green-700">CURRENT NEWS</Link>
-            <Link href="/contact" className="font-medium text-gray-700 hover:text-green-700">CONTACT US</Link>
+            {headerLinks.map(({ title, href }) => (
+              <Link key={href} href={href} className="font-medium text-md text-gray-700 hover:text-green-700 uppercase">
+                {title.toUpperCase()}
+              </Link>
+            ))}
           </nav>
 
           {/* Mobile menu button */}
@@ -117,7 +105,7 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link href="/" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-md">HOME</Link>
             <Link href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-md">ABOUT US</Link>
-            <button className="w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-md" onClick={() => {}}>
+            <button className="w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-md" onClick={() => { }}>
               DEPARTMENTS
             </button>
             <div className="pl-6 space-y-1">

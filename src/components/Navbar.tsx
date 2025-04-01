@@ -52,18 +52,19 @@ const Navbar = () => {
 
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center">
-              <div className="relative h-14 w-52">
+          <div className="flex justify-center items-center w-full">
+            <Link href="/" className="flex flex-col md:flex-row items-center">
+              <div className="relative h-14 w-20 flex justify-center">
                 <Image
                   src="/seku-logo.png"
                   alt="SEKU Logo"
-                  fill
-                  style={{ objectFit: "contain" }}
+                  width={80}
+                  height={80}
                   priority
+                  className="object-contain"
                 />
               </div>
-              <div className="ml-2 hidden md:block">
+              <div className="mt-2 md:mt-0 md:ml-3 text-center md:text-left">
                 <div className="text-green-700 font-semibold text-lg">South Eastern Kenya University</div>
                 <div className="text-sm text-gray-600">School of Science and Computing</div>
               </div>
@@ -71,12 +72,18 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {headerLinks.map(({ title, href }) => (
-              <Link key={href} href={href} className="font-medium text-md text-gray-700 hover:text-green-700 uppercase">
-                {title.toUpperCase()}
-              </Link>
-            ))}
+          <nav className="hidden md:flex items-center">
+            <div className="flex items-center justify-between w-full">
+              {headerLinks.map(({ title, href }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="font-medium whitespace-nowrap text-[clamp(0.75rem,1.5vw,1rem)] px-[clamp(0.5rem,1vw,1.5rem)] text-gray-700 hover:text-green-700 uppercase transition-colors"
+                >
+                  {title.toUpperCase()}
+                </Link>
+              ))}
+            </div>
           </nav>
 
           {/* Mobile menu button */}

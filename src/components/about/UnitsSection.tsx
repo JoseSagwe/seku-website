@@ -1,5 +1,6 @@
 // components/about/UnitsSection.tsx
 import Link from "next/link";
+import Image from "next/image";
 
 // Units data
 const units = [
@@ -30,10 +31,11 @@ const UnitsSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8">
             <div className="col-span-1 md:col-span-2">
               <div className="relative h-64 w-full rounded-lg overflow-hidden">
-                <img 
+                <Image 
                   src="/images/university-units.jpg" 
                   alt="University Units" 
-                  className="w-full h-full object-cover"
+                  className="object-cover"
+                  fill
                 />
               </div>
             </div>

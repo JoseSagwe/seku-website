@@ -1,10 +1,14 @@
+// src/components/sections/news/newsBanner.tsx
+import Image from "next/image";
+
 const NewsBanner = () => {
     return (
         <div className="relative w-full h-80">
-            <img
-                src="/images/events/ieee-seku.png"
-                alt="Event Banner"
-                className="absolute inset-0 w-full h-full object-cover"
+            <Image
+                src="/images/news/news-banner.jpg"
+                alt="News Banner"
+                className="object-cover"
+                fill
             />
 
             <div
@@ -13,13 +17,13 @@ const NewsBanner = () => {
             ></div>
 
             <div className="absolute inset-0 bg-transparent bg-opacity-50 flex flex-col items-center justify-center text-white text-center px-4">
-                <h2 className="text-4xl font-bold">LATEST NEWS</h2>
-                <p className="text-lg mt-2">
-                    <span className="text-gray-300">Home</span> // <span className="text-white">updated with our latest stories</span>
+                <h2 className="text-6xl font-bold">Latest News</h2>
+                <p className="text-xl mt-2">
+                    <span className="text-gray-300">News</span> {/* */} <span className="text-white">stay updated</span>
                 </p>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default NewsBanner;
+export default NewsBanner

@@ -21,8 +21,8 @@ const NewsContent = () => {
                     try {
                         const response = await fetch(img, { method: 'HEAD' });
                         imageStatus[newsIndex][imgIndex] = response.ok;
-                    } catch (error) {
-                        // Using underscore prefix to indicate we're ignoring this variable
+                    } catch (_) {
+                        // Using underscore to indicate we're ignoring this variable
                         imageStatus[newsIndex][imgIndex] = false;
                     }
                 }
